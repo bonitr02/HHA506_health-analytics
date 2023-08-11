@@ -11,7 +11,8 @@ The if/elif statements print an interpretation of the patient's fasting blood gl
 
 ## Explanation of Function
 The function is an Absolute Neutrophil Count (ANC) calculator that uses the White Blood Cell(WBC), Neutrophil, and Band lab results as inputs.
-The calculator adds the Neutrophil and Band results together, divides by 100, then multiplies by the White Blood Cell count. 
+The calculator adds the Neutrophil and Band results together, divides by 100, then multiplies by the White Blood Cell count.
+Depending on the calculated result, a different if/else statement will print.
 
 ## Expected Output
 Based on the input values of 11,000 WBC, 30 Neutrophil and 3 Bands, the expected output is 3,630.
