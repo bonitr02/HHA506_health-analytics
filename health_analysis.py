@@ -10,7 +10,7 @@ patientSex = 'male'
 bloodGlucose = [85, 90, 105, 123]
 print('\n')
 print('Patient',patientName,'is a', patientAge,'year old', patientSex, 'who has \
-provided the following blood glucose results in mg/dL on 5/12/23, 6/19/23, 7/17/23 and 8/10/23:', bloodGlucose)
+provided the following blood glucose results in mg/dL on 5/12/23, 6/19/23, 7/17/23 and 8/10/23:', bloodGlucose,'.')
 
 # dictionary
 additional_labs = {
@@ -24,7 +24,7 @@ additional_labs = {
     },
 }
 print('\n')
-print(patientName, 'also presents with', additional_labs)
+print(patientName, 'also presents with the following lab results:', additional_labs)
 print('\n')
 
 #if-else statement
@@ -54,11 +54,16 @@ def ANC_Calculator(WBC, Neutrophils, Bands):
     return calculatedOutcome
 
 print('\n')
-print("A normal ANC count is between 2,500 and 6,000 cells/mcL")
-print('\n')
+
 ANCresult = ANC_Calculator(11000, 30, 3)
 print("This is the calculated Absolute Neutrophil Count for",patientName,": " ,ANCresult, "cells/mcL")
 print('\n')
 
+if ANCresult < 2500:
+    print('Your ANC is below normal at:', ANCresult)
+else:
+    print('Your ANC is normal at:', ANCresult)
+
+print('\n')
 print("End of Report")
 print('\n')
